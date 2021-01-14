@@ -1,25 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import RepoTable from './components/repoTable/RepoTable.js';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <h1 className="Header">My GitHub Repos</h1>
+    <div className="Table">
+    <RepoTable />
     </div>
-  );
-}
-
-export default App;
+    </div>
+    );
+  }
+  
+  export default App;
+  
