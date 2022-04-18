@@ -50,14 +50,14 @@ function RepoTable() {
                 <tr>
                 <th>Repo</th>
                 <th>Description</th>
-                <th>Updated at</th>
-                <th>Created at</th>
+                <th>Updated</th>
+                <th>Created</th>
                 </tr>
                 </thead>
                 <tbody>
                 {repos.map(repo => (
-                    <tr>
-                    <td key={repo.id}><a href={repo.html_url} target="_blank" rel="noreferrer">{repo.name}</a></td>
+                    <tr key={repo.id}>
+                    <td><a href={repo.html_url} target="_blank" rel="noopener noreferrer">{repo.name}</a></td>
                     <td>{repo.description}</td>
                     <td>{repo.updated_at}</td>
                     <td>{repo.created_at}</td>
